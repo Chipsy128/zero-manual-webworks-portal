@@ -1,5 +1,3 @@
-
-import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -15,21 +13,31 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 max-w-3xl">
             <h1 className="mb-6 text-gradient leading-tight">
-              Automate Your Business, <br className="hidden md:block" />
-              <span className="text-brand-blue">Maximize Your Potential</span>
+              Days into minutes,<br className="hidden md:block" />
+              <span className="text-brand-blue">hours into seconds</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
               Zero Manual helps businesses eliminate repetitive tasks, reduce errors, and
               free up valuable time through intelligent automation solutions.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-brand-teal hover:bg-brand-blue text-white">
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white">
+              {/* <Button size="lg" className="bg-brand-teal hover:bg-brand-blue text-white"> */}
+              {/*   Get Started */}
+              {/*   <ArrowRight className="ml-2 h-4 w-4" /> */}
+              {/* </Button> */}
+              <Button
+                onClick={() => {
+                  const section = document.getElementById("contact");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                size="lg"
+                variant="outline"
+                className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white"
+              >
                 Learn More
               </Button>
             </div>
@@ -40,7 +48,7 @@ const HeroSection = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-brand-teal to-brand-blue rounded-lg blur opacity-75"></div>
               <div className="relative bg-white rounded-lg shadow-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                  src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Automation dashboard" 
                   className="w-full h-auto object-cover"
                 />

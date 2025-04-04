@@ -1,5 +1,5 @@
-
-import { FacebookIcon, TwitterIcon, LinkedinIcon, InstagramIcon, ArrowUpIcon } from 'lucide-react';
+import { ArrowUpIcon } from 'lucide-react';
+import './HeaderFooterStyle.css';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,24 +14,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Zero<span className="text-brand-orange">Manual</span></h3>
+            <h3 className="text-xl font-bold mb-4">Zero<span className="text-brand-turquoise">Manual</span></h3>
             <p className="text-gray-300 mb-4">
-              Empowering businesses through intelligent automation solutions that drive efficiency and growth.
+              Days into minutes, hours into seconds
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FacebookIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <TwitterIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <LinkedinIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <InstagramIcon className="h-5 w-5" />
-              </a>
-            </div>
           </div>
           
           <div>
@@ -47,8 +33,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Robotic Process Automation</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Business Process Analysis</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Workflow Automation</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Automation Orchestration</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">End-to-End Automation</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Intelligent Document Processing</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Custom Automation Solutions</a></li>
             </ul>
@@ -57,10 +45,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Automation Way</li>
-              <li>Tech City, CA 94103</li>
-              <li>info@zeromanual.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>info@zero-manual.com</li>
             </ul>
           </div>
         </div>

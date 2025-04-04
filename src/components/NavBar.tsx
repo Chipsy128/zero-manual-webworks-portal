@@ -1,8 +1,7 @@
-
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import './HeaderFooterStyle.css';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +34,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2">
             <span className="text-2xl font-bold text-brand-blue">
-              Zero<span className="text-brand-orange">Manual</span>
+              Zero<span className="text-brand-turquoise">Manual</span>
             </span>
           </a>
 
@@ -50,9 +49,9 @@ const NavBar = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="bg-brand-teal hover:bg-brand-blue text-white">
-              Get Started
-            </Button>
+            {/* <Button className="bg-brand-teal hover:bg-brand-blue text-white"> */}
+            {/*   Get Started */}
+            {/* </Button> */}
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -78,9 +77,9 @@ const NavBar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="mt-4 bg-brand-teal hover:bg-brand-blue text-white">
-                Get Started
-              </Button>
+              {/* <Button className="mt-4 bg-brand-teal hover:bg-brand-blue text-white"> */}
+              {/*   Get Started */}
+              {/* </Button> */}
             </div>
           </div>
         )}

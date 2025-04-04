@@ -4,34 +4,34 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const services = [
   {
-    icon: <Bot className="h-10 w-10 text-brand-teal" />,
-    title: 'Robotic Process Automation',
-    description: 'Automate repetitive tasks across applications and systems with software robots that mimic human actions.'
-  },
-  {
-    icon: <Workflow className="h-10 w-10 text-brand-teal" />,
-    title: 'Workflow Automation',
-    description: 'Streamline complex business processes with automated workflows that reduce manual handoffs and bottlenecks.'
-  },
-  {
-    icon: <BarChart className="h-10 w-10 text-brand-teal" />,
-    title: 'Intelligent Document Processing',
-    description: 'Extract, analyze, and process data from documents using AI and machine learning technologies.'
+    icon: <Briefcase className="h-10 w-10 text-brand-teal" />,
+    title: 'Business Process Analysis',
+    description: ' Identify automation opportunities through comprehensive business process reviews.'
   },
   {
     icon: <Calendar className="h-10 w-10 text-brand-teal" />,
-    title: 'Scheduled Automation',
-    description: 'Set up time-based automations to execute tasks on schedules that align with your business needs.'
+    title: 'Workflow Automation',
+    description: 'Streamline and optimize workflows to reduce manual bottlenecks.'
   },
   {
-    icon: <Briefcase className="h-10 w-10 text-brand-teal" />,
-    title: 'Business Process Analysis',
-    description: 'Identify automation opportunities through comprehensive analysis of your existing business processes.'
+  icon: <Bot className="h-10 w-10 text-brand-teal" />,
+    title: 'Automation Orchestration',
+    description: 'Coordinate and integrate different automation tools for seamless execution.'
+  },
+  {
+    icon: <Workflow className="h-10 w-10 text-brand-teal" />,
+    title: 'End-to-End Automation',
+    description: 'Implement, test, and scale automation solutions from start to finish.'
   },
   {
     icon: <FileText className="h-10 w-10 text-brand-teal" />,
-    title: 'Custom Automation Solutions',
-    description: 'Tailored automation solutions designed specifically for your unique business requirements.'
+    title: 'Intelligent Document Processing',
+    description: 'Leverage AI and machine learning for continuous document automation.'
+  },
+  {
+    icon: <BarChart className="h-10 w-10 text-brand-teal" />,
+    title: 'Custom Automation Solutions ',
+    description: 'Develop tailored solutions to keep automation aligned with evolving business needs.'
   }
 ];
 

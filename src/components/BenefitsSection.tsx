@@ -3,28 +3,24 @@ import { Check } from 'lucide-react';
 
 const benefits = [
   {
-    title: "Increased Productivity",
-    description: "Reduce manual work and free up your team to focus on high-value tasks that drive business growth."
+    title: "Hybrid Approach",
+    description: "We blend pre-built solutions with tailored integrations, making automation both flexible and cost-effective."
   },
   {
-    title: "Error Reduction",
-    description: "Eliminate human errors in repetitive tasks, ensuring consistent quality in your operations."
+    title: "Risk-Free Adoption Model",
+    description: "A free trial that removes friction, helping small and medium businesses commit with confidence."
   },
   {
-    title: "Cost Savings",
-    description: "Lower operational costs by automating tasks that would otherwise require manual labor."
+    title: "Done-For-You + Continuous Support",
+    description: "From setup to scaling, we optimize, monitor, and refine, ensuring long-term success."
   },
   {
-    title: "Faster Processing",
-    description: "Speed up workflows and reduce processing times from days to minutes with 24/7 automation."
+    title: "Human-Centric Approach",
+    description: "We focus on team adoption and ease of use, so employees embrace automation instead of resisting it."
   },
   {
-    title: "Better Customer Experience",
-    description: "Provide quicker responses and more accurate service to enhance customer satisfaction."
-  },
-  {
-    title: "Scalable Operations",
-    description: "Easily scale your operations up or down without proportional increases in workforce."
+    title: "Scaling & Future-Proofing",
+    description: "Designed to grow with your business, our automations evolve seamlessly adapting as your needs change."
   }
 ];
 
@@ -36,10 +32,6 @@ const BenefitsSection = () => {
           <div className="flex-1">
             <div className="max-w-xl">
               <h2 className="text-brand-blue mb-6">Why Choose Zero Manual Automation</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Our automation solutions deliver tangible benefits that help your business thrive in today's competitive landscape.
-              </p>
-              
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
